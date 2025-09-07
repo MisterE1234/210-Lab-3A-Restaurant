@@ -1,3 +1,6 @@
+    //COMSC-210|Lab 3A| Ethan Aylard
+    // IDE used: Visual studio code
+
     #include <iostream>
     using namespace std;
     //This is Restaurant struct: It stores information gathered from the user about a restaurant
@@ -27,7 +30,7 @@
         return 0;
     }
     //Function Definitions:
-    //This function will ask the user for the data required for the Restaurant struct:
+    //This function will ask the user for the data required for the Restaurant struct then returns a Restaurant:
     Restaurant getData() {
         Restaurant temp; //a temperary struct variable.
         bool valid = false; // This variable will be used to make sure that the answer provided are valid.
@@ -106,7 +109,7 @@
     
     return temp;
     }
-    // This function will display the user's data on the console:
+    // This function will display the Restaurant struct on the console:
     void outputRestaurant(const Restaurant &entry) {
         cout << "Restaurant Name: " << entry.name << ":\n";
         cout << "Restaurant Style: " << entry.style << endl;
